@@ -1,0 +1,78 @@
+html {
+      background: rgba(0,0,0,0.2) url(https://wallpapercave.com/wp/wp4932412.jpg);
+      background-size: 129% 100%;
+      font-family:'helvetica neue';
+      text-align: center;
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display: flex;
+      flex: 1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .clock {
+      background-image: url(https://clipart-library.com/images/rcnrbnp5i.png);
+      background-size: contain;
+      width: 30rem;
+      height: 30rem;
+      border: 1px solid rgba(0,0,0,0.7);
+      border-radius: 50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+	.hour-hand{
+		width:30%;
+		height:6px;
+		background-color: black;
+		position: absolute;
+		top:50%;
+		margin-left: 20%;
+		transform-origin: 95%;
+		transform: rotate(90deg);
+		transition: all 0.05s;
+		transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+	}
+
+	.min-hand{
+		width:40%;
+		height:6px;
+		background-color: black;
+		position: absolute;
+		top:50%;
+		margin-left: 10%;
+		transform-origin: 95%;
+		transform: rotate(90deg);
+		transition: all 0.05s;
+		transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+	}
+
+	.second-hand{
+		width:50%;
+		height:6px;
+		background-color: red;
+		position: absolute;
+		top:50%;
+		transform-origin: 95%;
+		transform: rotate(90deg);
+		transition: all 0.05s;
+		transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+	}
+
+	.fast
+	{
+		transition: all 0s;
+	}
